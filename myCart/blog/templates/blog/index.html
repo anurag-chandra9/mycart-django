@@ -12,6 +12,8 @@
                     <h3 class="mb-0">{{item.tilte}}</h3>
                     <div class="mb-1 text-muted"></div>
                     <p class="card-text mb-auto">{{item.head1}}</p>
+                    <p class="card-text mb-auto">{{ item.chead1 | slice:"0:100" }}</p>
+
                     <a href="blogpost/{{item.post_id}}" class="stretched-link">Continue reading</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
