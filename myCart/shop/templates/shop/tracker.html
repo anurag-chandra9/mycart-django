@@ -1,5 +1,5 @@
 {% extends 'shop/basic.html' %}
-{% block title%} Checkout - My Awesome Cart{% endblock %}
+{% block title%} Checkout -QuickCart{% endblock %}
 {% block body %}
 <div class="container">
     <div class="col my-4">
@@ -39,7 +39,7 @@
 $('#trackerForm').submit(function(event) {
     $('#items').empty();
     var formData = {
-        'OrderId': $('input[name=OrderId]').val(),
+        'orderId': $('input[name=OrderId]').val(),
         'email': $('input[name=email]').val(),
         'csrfmiddlewaretoken': $('input[name=csrfmiddlewaretoken]').val()
     };
